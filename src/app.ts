@@ -36,17 +36,6 @@ const configs = {
   restaurant: restaurantConfig,
   contacts: contactsConfig,
 } satisfies Record<string, AppConfig>;
-
-
-                                                  // import { LitElement, html } from "../node_modules/lit"
-                                                  // import { customElement } from "../node_modules/lit/decorators.js";
-
-                                                  // @customElement("demo-element")
-                                                  // export class DemoElement extends LitElement {
-                                                  //   render() {
-                                                  //     return html`<p>Hello from <b>demo-element</b>!</p>`;
-                                                  //   }
-                                                  // }
  
 
  @customElement("a2ui-shell")
@@ -305,17 +294,6 @@ const configs = {
   render() {
     return [
       html`<h1>Hello742</h1>`,
-      html `<button
-        @click=${async () => {
-          const response = await fetch("http://localhost:8000/chat", {
-            method: "POST",
-          });
-          const text = await response.text();
-          alert("Response: " + text);
-        }}
-      >
-        Submit (debug)
-      </button>`,
       this.#renderThemeToggle(),
       this.#maybeRenderForm(),
       this.#maybeRenderData(),

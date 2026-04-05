@@ -79,7 +79,8 @@
    "layout-m-0": true,
    "typography-sz-bm": true,
    "layout-as-n": true,
-   "color-c-n10": true,
+  //  "color-c-n10": true,
+   "color-c-n70": true,
  };
  
  const orderedList = {
